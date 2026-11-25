@@ -1,0 +1,20 @@
+{
+  "naive-bayes": {
+    "train_seconds": 0.28,
+    "accuracy": 0.6441,
+    "macro_f1": 0.5357,
+    "file": "naive_bayes.joblib",
+    "size_kb": 829.8,
+    "train_size": 18825,
+    "test_size": 4707
+  },
+  "svm": {
+    "train_seconds": 0.59,
+    "accuracy": 0.6699,
+    "macro_f1": 0.4952,
+    "file": "svm.joblib",
+    "size_kb": 1117.6,
+    "train_size": 18825,
+    "test_size": 4707
+  }
+}

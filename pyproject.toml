@@ -1,0 +1,81 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "absa-library"
+version = "0.1.0"
+description = "Aspect-Based Sentiment Analysis untuk teks Bahasa Indonesia informal (multi-engine)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Yusuf Rahmadhani Asy'Ari" }]
+keywords = ["absa", "sentiment-analysis", "indonesian", "nlp", "aspect-based"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "scikit-learn>=1.2",
+    "joblib>=1.2",
+]
+
+[project.optional-dependencies]
+indobert = ["torch>=2.0", "transformers>=4.30"]
+rule = ["stanza>=1.5"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.4",
+    "build>=1.0",
+    "twine>=4.0",
+]
+docs = ["jupyter>=1.0", "nbformat>=5.0"]
+
+[project.urls]
+Homepage = "https://github.com/yusufra/absa-library"
+Documentation = "https://github.com/yusufra/absa-library/tree/main/docs"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+absa_library = ["data/*.json", "data/*.txt", "data/pretrained/*.joblib"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=absa_library --cov-report=term-missing --cov-fail-under=80"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["absa_library"]
+omit = ["*/data/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

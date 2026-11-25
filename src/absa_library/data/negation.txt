@@ -1,0 +1,21 @@
+# Kata negasi Bahasa Indonesia. Kata-kata ini tidak pernah dihapus sebagai
+# stop word karena membalik polaritas opini.
+tidak
+tak
+bukan
+belum
+jangan
+kurang
+tanpa
+gak
+ga
+nggak
+ngga
+enggak
+engga
+tdk
+kagak
+ogah
+bukanlah
+takkan
+tiada

@@ -1,0 +1,60 @@
+# NOTICE — Atribusi Data Pihak Ketiga
+
+Paket `absa-library` mendistribusikan beberapa berkas data bahasa yang berasal
+dari sumber pihak ketiga. Berkas-berkas tersebut tidak tercakup oleh lisensi MIT
+milik kode program; masing-masing tunduk pada lisensi asalnya seperti di bawah.
+
+## 1. Kamus Alay (Colloquial Indonesian Lexicon)
+
+- Berkas turunan: `src/absa_library/data/slang_dict.json`
+- Sumber: https://github.com/nasalsabila/kamus-alay
+- Sitasi: Salsabila, N. A., Winatmoko, Y. A., Septiandri, A. A., & Jamal, A. (2018).
+  *Colloquial Indonesian Lexicon*. 2018 International Conference on Asian
+  Language Processing (IALP), 226-229. doi:10.1109/IALP.2018.8629151
+- Lisensi: MIT (dinyatakan pada publikasi; repositori tidak menyertakan berkas
+  LICENSE tersendiri).
+
+## 2. NLP Bahasa Resources (stopwords & slang gabungan)
+
+- Berkas turunan: `src/absa_library/data/stopwords_id.txt`,
+  `src/absa_library/data/slang_dict.json`
+- Sumber: https://github.com/louisowen6/NLP_bahasa_resources
+- Lisensi: MIT
+
+## 3. Stopwords ISO — Indonesian
+
+- Berkas turunan: `src/absa_library/data/stopwords_id.txt`
+- Sumber: https://github.com/stopwords-iso/stopwords-id
+- Lisensi: MIT
+
+## 4. Pujangga — Formalization Dictionary
+
+- Berkas turunan: `src/absa_library/data/slang_dict.json`
+- Sumber: https://github.com/panggi/pujangga
+- Lisensi: Apache License 2.0
+
+## 5. PRDECT-ID (kosakata frekuensi)
+
+- Berkas turunan: `src/absa_library/data/vocab_id.txt`
+- Sumber: https://data.mendeley.com/datasets/574v66hf2v/1
+- Sitasi: Fauzi, M. A., et al. (2022). *PRDECT-ID: Indonesian product reviews
+  dataset for emotions classification tasks*. Data in Brief.
+- Lisensi: Creative Commons Attribution 4.0 International (CC BY 4.0)
+- Pemakaian: daftar kata disusun dari frekuensi token ulasan (bukan
+  mendistribusikan ulang teks ulasan).
+
+## 6. Model pretrained Naive Bayes dan SVM
+
+- Berkas: `src/absa_library/data/pretrained/naive_bayes.joblib`,
+  `src/absa_library/data/pretrained/svm.joblib`
+- Asal: dilatih oleh penulis proyek pada dataset ulasan aplikasi Google Play
+  berbahasa Indonesia yang dikumpulkan untuk penelitian ini
+  (`indonesian_ai_chatbots_reviews.csv`, 23.532 ulasan unik, 3 kelas).
+- Lisensi model: MIT, didistribusikan untuk keperluan penelitian dan edukasi.
+- Metrik evaluasi (test 20%): lihat `experiments/pretrained_metrics.json`.
+
+## 7. Aset yang ditulis sendiri
+
+- `lexicon_positive.txt`, `lexicon_negative.txt`, `negation.txt`,
+  `intensifiers.json`, `aspect_vocab.txt`
+- Lisensi: MIT (bagian dari proyek ini)
