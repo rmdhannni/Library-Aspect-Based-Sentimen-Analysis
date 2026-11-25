@@ -1,5 +1,27 @@
 # Memory
 
+## 2026-11-25 — Push awal ke GitHub
+
+Tujuan: menyimpan commit awal dan mengunggah seluruh kode library ke GitHub.
+
+Hasil:
+- Commit awal `0f23da9` dengan pesan
+  `feat: add initial absa-library implementation (T1-T7)`.
+- Branch lokal diubah dari `master` menjadi `main`.
+- Remote `origin` dipasang ke
+  https://github.com/rmdhannni/Library-Aspect-Based-Sentimen-Analysis.git
+- Push branch `main` berhasil. Tag `v0.1.0` juga dibuat dan dipush.
+- Total 56 file dan 18.295 baris masuk commit. `Data/`, `dist/`, dan `.venv/`
+  tidak ikut karena di-ignore. Model pretrained NB dan SVM ikut.
+- Working tree bersih dan branch `main` sudah tracking `origin/main`.
+- Identitas git lokal diisi: `Yusuf Rahmadhani Asy'Ari` dan
+  `ggdani137@gmail.com`.
+- Muncul peringatan LF akan diganti CRLF di Windows. Ini normal dan tidak
+  menggagalkan push.
+
+Langkah lanjut: Stage A, yaitu kontrak `AspectStrategy`, registry, dan
+`describe_engines()`.
+
 ## 2026-11-25 — Perencanaan 80% sidang progress, demo, dan push GitHub
 
 Tujuan: menetapkan target 80% untuk sidang progress, memvalidasi cakupan MVP,

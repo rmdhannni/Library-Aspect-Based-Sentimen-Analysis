@@ -26,9 +26,10 @@
 - [x] Tetapkan evaluasi dua lapis dan gold set 500 baris
 - [x] Buat `demo_absa.py` dan verifikasi rule-based, NB, dan SVM
 - [x] Identifikasi bug generalitas koreksi ejaan dan bias token NB
+- [x] Commit awal `0f23da9` dan push branch `main` + tag `v0.1.0` ke GitHub
 
 ## Sedang dikerjakan
-- [ ] Stage A — `AspectStrategy` + registry, `describe_engines()`, commit awal, push GitHub
+- [ ] Stage A — `AspectStrategy` + registry, `describe_engines()`
 - [ ] Stage B — proteksi koreksi ejaan, perluasan kosakata, ablasi A/B/C
 
 ## Berikutnya
